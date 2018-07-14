@@ -48,7 +48,7 @@ public class CategoryController {
 		
 		List<Category> listcategories=categoryDAO.listcateg();
 		//Multipart file uploading
-				String path="C:\\Users\\Mausam\\workspace\\frontend\\src\\main\\webapp\\resources\\images\\";
+				String path="D:\\Project\\frontend-master\\src\\main\\webapp\\resources\\images\\";
 				path=path+String.valueOf(category.getCategoryId())+".jpg";
 				
 				File file=new File(path);      //create a blank file  where content can be written
@@ -114,7 +114,7 @@ public class CategoryController {
 		List<Category> listcategories=categoryDAO.listcateg();
 		
 		//Multipart file uploading
-				String path="C:\\Users\\Mausam\\workspace\\frontend\\src\\main\\webapp\\resources\\images\\";
+				String path="D:\\Project\\frontend-master\\src\\main\\webapp\\resources\\images\\";
 				path=path+String.valueOf(category.getCategoryId())+".jpg";
 				
 				File file=new File(path);      //create a blank file  where content can be written
