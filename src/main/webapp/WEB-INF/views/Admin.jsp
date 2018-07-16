@@ -62,7 +62,7 @@ h1.page-header {
 		<div class="col-md-10 content">
 		
 		<div class="jumbotron text-center">
-  <h1>ShoppingWhopping.com</h1> 
+  
   <p>One Stop Shop</p> 
   
   

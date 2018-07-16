@@ -10,6 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
+  
 </head>
 <body>
 
@@ -27,20 +28,18 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="resources/images/one.png" alt="Los Angeles" height="100%" width="100%"">
+        <img src="resources/images/carasol3.jpg" alt="Los Angeles" height="100%" width="100%"">
       </div>
 
       <div class="item">
-        <img src="resources/images/two.jpg" alt="Chicago" height="100%" width="100%">
+        <img src="resources/images/carasol1.jpg" alt="Chicago" height="100%" width="100%">
       </div>
     
       <div class="item">
-        <img src="resources/images/three.jpg" alt="New york" height="100%" width="100%">
+        <img src="resources/images/carasol2.jpg" alt="New york" height="100%" width="100%">
       </div>
 	  
-	  <div class="item">
-        <img src="resources/images/four.png" alt="New york" height="100%" width="100%">
-      </div>
+	 
     </div>
 
     <!-- Left and right controls -->
@@ -56,52 +55,42 @@
 </div>
 
 <br>
- <h2><center><font face="trebuchet ms"><mark>ShoppingWhopping Exclusives</mark><span class="glyphicon" style="color:#f4511e">&#xe042;</span></center></h2><br><br>
+ <h2><center><font face="trebuchet ms"><mark>Fashworld</mark><span class="glyphicon" style="color:#f4511e">&#xe042;</span></center></h2><br><br>
 
       <div class="row">
       <div class="col-md-1"></div>
       
         <div class="col-md-4">
           
-            <a href="#"><img class="card-img-top" src="resources/images/port1.jpeg" width="150" height="250"></a>
+            <a href="#"><img class="card-img-top" src="resources/images/ww1.jpg" ></a>
         <div class="card-body">
         <h4 class="card-title">
-        <a href="/frontend/GetProductByCategory/182">in Headphones</a>
+        <a href="/frontend/GetProductByCategory/182">Party Wear Suit</a>
         </h4>
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Headphones">Get Info</button>
-  		<div id="Headphones" class="collapse">
-    	JBL T450 Headset with Mic Bluetooth Headset with Mic  (Black, Over the Ear)
-  		</div>
+       
         </div>
         </div>
         
         <div class="col-md-4 portfolio-item">
           
-            <a href="#"><img class="card-img-top" src="resources/images/port2.jpeg" width="150" height="250"></a>
+            <a href="#"><img class="card-img-top" src="resources/images/b1.jpg"></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">in Smart Watches</a>
+                <a href="#">Boys Casual Shirt and Coat</a>
               </h4>
-              
-              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Smart_Watches">Get Info</button>
-  <div id="Smart_Watches" class="collapse">
-    Apple Watch 38 mm Stainless Steel Case with Modern Buckle - Small  (Pink Strap Small)
-  </div>
+           
               
             </div>
           </div>
         
         <div class="col-md-3  portfolio-item">
           
-            <a href="#"><img class="card-img-top" src="resources/images/port3.jpeg" width="150" height="250"></a>
+            <a href="#"><img class="card-img-top" src="resources/images/Pic1.jpg" ></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">in Men's Shirts </a>
+                <a href="#">Girl's  Party Top Skirt set </a>
               </h4>
-              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Men">Get Info</button>
-  <div id="Men" class="collapse">
-    Peter England University Men's Self Design Casual Spread Shirt
-  </div>
+             
             
             </div>
           </div>
@@ -109,67 +98,82 @@
         <div class="col-md-1"></div>
         <div class="col-md-4  portfolio-item">
           
-            <a href="#"><img class="card-img-top" src="resources/images/port4.jpeg" width="150" height="250"></a>
+            <a href="#"><img class="card-img-top" src="resources/images/mm2.jpg" ></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">in Women's Tops/T-Shirts</a>
-              </h4>
-                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Women">Get Info</button>
-  <div id="Women" class="collapse">
-    AANIA Casual 3/4th Sleeve Embroidered Women Red Top
-  </div>
-              
+                <a href="#">Men's Casual Shirt and Coat</a>
+              </h4>        
               
             </div>
           </div>
         
         <div class="col-md-4 portfolio-item">
           
-            <a href="#"><img class="card-img-top" src="resources/images/port5.jpeg" width="150" height="250"></a>
+            <a href="#"><img class="card-img-top" src="resources/images/New3.jpg" ></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">in iPhones and Mobile Phones</a>
+                <a href="#">Velvet Saree</a>
               </h4>
-              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#iPhones_and_Mobile_Phones">Get Info</button>
-  <div id="iPhones_and_Mobile_Phones" class="collapse">
-    Apple iPhone 8 Plus (Gold, 64 GB)
-  </div>
+             
               
             </div>
           </div>
         
         <div class="col-md-3  portfolio-item">
           
-            <a href="#"><img class="card-img-top" src="resources/images/port6.jpeg" width="300" height="250"></a>
+            <a href="#"><img class="card-img-top" src="resources/images/new 2.jpg" ></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">in Mac Books and Laptops</a>
+                <a href="#">Men's Casual Shirt</a>
               </h4>
-              
-              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Mac_Books_and_Laptops">Get Info</button>
-  <div id="Mac_Books_and_Laptops" class="collapse">
-    Apple Macbook Pro Core i7 - (16 GB/512 GB SSD/Mac OS Sierra/2 GB Graphics) MLH42HN/A  (15 inch, Space Grey, 1.83 kg)
-  </div>
+            
               
             </div>
           </div>
         </div>
         
 
+<h2><center><font face="trebuchet ms"><mark>Trending</mark><span class="glyphicon" style="color:#f4511e">&#xe042;</span></center></h2><br><br>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+ <div class="row">
+      <div class="col-md-1"></div>
+      
+        <div class="col-md-4">
+          
+            <a href="#"><img class="card-img-top" src="resources/images/new4.jpg" ></a>
+        <div class="card-body">
+        <h4 class="card-title">
+        <a href="/frontend/GetProductByCategory/182">Girl's Ethinic Wear</a>
+        </h4>
+       
+        </div>
+        </div>
+        
+        <div class="col-md-4 portfolio-item">
+          
+            <a href="#"><img class="card-img-top" src="resources/images/new7.jpg"></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Men's Casual Shirt's</a>
+              </h4>
+           
+              
+            </div>
+          </div>
+        
+        <div class="col-md-3  portfolio-item">
+          
+            <a href="#"><img class="card-img-top" src="resources/images/new6.jpg" ></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Women Top </a>
+              </h4>
+             
+            
+            </div>
+          </div>
+        </div>
 
 
 

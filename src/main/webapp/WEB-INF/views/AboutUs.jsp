@@ -40,19 +40,42 @@ background: url("resources/images/3b.jpg")
 <br><br>
 
  <div class="row">
-        <div class="col-4">
-        <image src="resources/images/ww1.jpg">
+      <div class="col-md-1"></div>
+      
+        <div class="col-md-4">
+          
+            <a href="#"><img class="card-img-top" src="resources/images/new 2.jpg" ></a>
+        <div class="card-body">
+        <h4 class="card-title">
+    </h4>
+       
+        </div>
         </div>
         
-        <div class="col-4">
-        <image src="resources/images/b1.jpg">
-        </div>
+        <div class="col-md-4 portfolio-item">
+          
+            <a href="#"><img class="card-img-top" src="resources/images/b1.jpg"></a>
+            <div class="card-body">
+              <h4 class="card-title">
+               
+              </h4>
+           
+              
+            </div>
+          </div>
         
-        <div class="col-4">
-        <image src="resources/images/mm2.jpg">
+        <div class="col-md-3  portfolio-item">
+          
+            <a href="#"><img class="card-img-top" src="resources/images/Pic1.jpg" ></a>
+            <div class="card-body">
+              <h4 class="card-title">
+               
+              </h4>
+             
+            
+            </div>
+          </div>
         </div>
-        </div>
-        
 
 </body>
 </html>

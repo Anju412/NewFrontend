@@ -2,6 +2,7 @@ package com.niit.controllers;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,11 +27,20 @@ public class CartController {
 	CartDAO cartDAO;
 	
 	@RequestMapping(value="/AddToCart/{prodId}")
-	public String addCartItem(@RequestParam("quantity")int quantity,@PathVariable("prodId") int productId,HttpSession session,Model m)
+	public String addCartItem(@RequestParam("quantity")int quantity,@PathVariable("prodId") int productId,HttpServletRequest request,Model m)
 	{
 	
 	Product product=productDAO.getProduct(productId);
-	String username=(String)session.getAttribute("username");
+	System.out.println(product.getProdId());
+	System.out.println(product.getPrice());
+	System.out.println(product.getCategoryId());
+	System.out.println(product.getProdDesc());
+	System.out.println(product.getProdId());
+	System.out.println(product.getProdName());
+	System.out.println(product.getStock());
+	System.out.println(quantity);
+	
+	String username=(String)request.getUserPrincipal().getName();
 	
 	CartItem cartItem=new CartItem();
 	cartItem.setProductId(product.getProdId());
@@ -39,6 +49,7 @@ public class CartController {
 	cartItem.setPrice(product.getPrice());
 	cartItem.setUserName(username);
 	cartItem.setStatus("NA");
+	System.out.println("we are in add cartitem");
 	
 	cartDAO.addCartItem(cartItem);
 	
@@ -52,10 +63,10 @@ public class CartController {
 	}
 	
 	@RequestMapping(value="/updateCartItem/{cartItemId}")
-	public String updateCartItem(@RequestParam("quantity")int quantity,@PathVariable("cartItemId") int cartItemId,HttpSession session,Model m)
+	public String updateCartItem(@RequestParam("quantity")int quantity,@PathVariable("cartItemId") int cartItemId,HttpServletRequest request,Model m)
 	{
 	CartItem cartItem=cartDAO.getCartItem(cartItemId);
-	String username=(String)session.getAttribute("username");
+	String username=(String)request.getUserPrincipal().getName();
 	
 	cartItem.setQuantity(quantity);
 	cartDAO.updateCartItem(cartItem);
@@ -70,10 +81,11 @@ public class CartController {
 	}
 	
 	@RequestMapping(value="/deleteCartItem/{cartItemId}")
-	public String deleteCartItem(@PathVariable("cartItemId") int cartItemId,HttpSession session,Model m)
+	public String deleteCartItem(@PathVariable("cartItemId") int cartItemId,HttpSession session,Model m,HttpServletRequest request)
 	{
 		CartItem cartItem=cartDAO.getCartItem(cartItemId);
-		String username=(String)session.getAttribute("username");
+		//String username=(String)session.getAttribute("username");
+		String username=(String)request.getUserPrincipal().getName();
 		
 		cartDAO.deleteCartItem(cartItem);
 		
@@ -91,7 +103,7 @@ public class CartController {
 	public String continueShopping(Model m)
 	{
 		m.addAttribute("productList",productDAO.listprod());
-		return "ProductDisplay";
+		return "index";
 	}
 
 	
