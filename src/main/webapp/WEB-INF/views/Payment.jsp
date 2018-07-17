@@ -3,13 +3,15 @@
 
 
 <div class="container">
+<form action="<c:url value="/paymentProcess"/>" method ="post">
+
 <table class="table">
 <tr>
 <td colspan="6"><center><h3>Payment</h3></center>
 
 <tr bgcolor="orange">
 <td colspan="4">Total Purchase Amount </td>
-<td>${totalPurchaseAmount }</td>
+<td>${totalPurchasedAmount }/--</td>
 </tr>
 
 <div class="container">

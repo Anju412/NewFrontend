@@ -15,7 +15,7 @@
 <body>
 
 <div class="container">
-   
+  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -177,8 +177,8 @@
 
 
 
-<%@include file="/WEB-INF/views/footer.jsp" %>
-</body>
+< <%@include file="/WEB-INF/views/footer.jsp" %>
+ </body>
 </html>
 
 
