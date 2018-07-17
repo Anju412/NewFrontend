@@ -56,9 +56,12 @@ public class ProductController {
 	
 	@RequestMapping("/totalProductInfo/{prodId}")
 	public String showTotalProductDisplay(Model m,@PathVariable("prodId")int prodId){
+		System.out.println("we are in total product info controller");
 		Product product=productDAO.getProduct(prodId);
+		System.out.println("product recieved of category"+product.getCategoryId());
 		m.addAttribute("product",product);
-		m.addAttribute("categoryName",categoryDAO.getCategory(product.getCategoryId()).getCategoryName());
+		System.out.println("category recieved of product"+(categoryDAO.getCategory(product.getCategoryId())).getCategoryName());
+		m.addAttribute("categoryName",(categoryDAO.getCategory(product.getCategoryId())).getCategoryName());
 		return "TotalProductDisplay";
 	}
 	

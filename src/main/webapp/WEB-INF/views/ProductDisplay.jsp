@@ -92,9 +92,8 @@ span.glyphicon {
 						
 						<div class="col-md-12 panelBottom">
 							<div class="col-md-4 text-center">
-								<%-- <button class="btn btn-lg btn-add-to-cart" href="<c:url value='frontend/totalProductInfo/${product.prodId}'/>">View Now! </button> --%> 						
-								
-								<input type="button"class="btn btn-lg btn-add-to-cart" class="btn btn-info" value="View Now!" onclick="location.href = 'totalProductInfo/${product.prodId}';">
+					
+								 <input type="button"class="btn btn-lg btn-add-to-cart" class="btn btn-info" value="View Now!" onclick="location.href = 'totalProductInfo/${product.prodId}';"> 
 							</div>
 							<div class="col-md-4 text-left">
 								 <span class="itemPrice">&#8377; ${product.price}</span></h5>

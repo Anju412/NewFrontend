@@ -1,8 +1,11 @@
 <%@ page language="java" contentType="text/html" %>
 <%@include file="Header.jsp" %>
 
+
+
 <div class="container">
 <table class="table">
+<td colspan="6"><center><h3>Your Cart</h3></center>
 <tr>
 <td> SL # </td>
 <td> Product Name</td>
