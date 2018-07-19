@@ -75,9 +75,9 @@ span.glyphicon {
 
  <c:forEach items="${productList}" var="product">
  
- <div class="container">    
+ <div class="container"  >    
 		<div class="row">
-			<div class="col-md-8">				
+			<div class="col-md-12">				
 				<div class="panel panel-default  panel--styled">
 					<div class="panel-body">
 						<div class="col-md-12 panelTop">	

@@ -283,9 +283,7 @@ width:100%;}
 					</tr>
 						
 					
-					<tr>
-					
-			
+					<tr>		
 						<td><center><input type="submit" class="btn btn-primary" value="Register"/></center></td>
 						<td><button type="reset" class="btn btn-primary">Reset</button></td>
 					</tr>

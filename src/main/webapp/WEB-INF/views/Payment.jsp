@@ -2,23 +2,23 @@
 <%@include file="Header.jsp" %>
 
 
-<div class="container">
+<div class="container" style="border:5px solid black">
 <form action="<c:url value="/paymentProcess"/>" method ="post">
 
 <table class="table">
 <tr>
-<td colspan="6"><center><h3>Payment</h3></center>
+<td colspan="6"><center><h2><b>Payment<b></h2></center>
 
-<tr bgcolor="orange">
-<td colspan="4">Total Purchase Amount </td>
-<td>${totalPurchasedAmount }/--</td>
+<tr bgcolor="navy">
+<td colspan="4"><font color="white">Total Purchase Amount </td>
+<td><font color="white">${totalPurchasedAmount }/--</td>
 </tr>
 
 <div class="container">
 <table class="table" align="center" width="50%">
 
 <tr>
-<td colspan="2">Payment Option</td>
+<td colspan="2"><b><h3><font color="indigo">Payment Option</font></h3></td>
 </tr>
 
 <tr>

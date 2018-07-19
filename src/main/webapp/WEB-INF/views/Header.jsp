@@ -26,21 +26,33 @@
             <li><a href="<c:url value='/register'/>">Register</a></li>
             </security:authorize> --%>
              <li><a href="<c:url value='/Productdisplay'/>">Product Display</a></li>
-            <li><a href="<c:url value='/category'/>">Category</a></li>
-            <li><a href="<c:url value='/contactus'/>">ContactUs</a></li>
+<%--             <li><a href="<c:url value='/category'/>">Category</a></li>
+ --%>            <li><a href="<c:url value='/contactus'/>">ContactUs</a></li>
             <li><a href="<c:url value='/aboutus'/>">AboutUs</a></li>
             <li><a href="<c:url value='/Admin'/>">Admin</a></li>
-            <security:authorize access="isAuthenticated()">
+            <!-- <security:authorize access="isAuthenticated()">
 			<li><a href="logout"><font size="2">LogOut</font></a></li>
-			</security:authorize>
+			</security:authorize> -->
     </ul>
     <ul class="nav navbar-nav navbar-right">
-    <security:authorize access="isAnonymous()">
-      <li><a href="<c:url value='/login1'/>"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+<!--     <security:authorize access="isAnonymous()">
+
+           
+ -->  <c:if test="${pageContext.request.userPrincipal.name==null }">  
+    <li><a href="<c:url value='/login1'/>"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       
       <li><a href="<c:url value='/register'/>"><span class="glyphicon glyphicon-user">Register</span> </a></li>
-       </security:authorize>
-    </ul>
+      </c:if>
+<!--        </security:authorize>
+<!--  -->       <security:authorize access="isAuthenticated()">
+ -->  
+            <c:if test="${pageContext.request.userPrincipal.name!=null }">
+      	<li class="nav-item">
+      	 <a class="nav-link" href="<c:url value='/logout'/>">Logout</a>
+<!-- 			<li><a href="logout"><font size="2">LogOut</font></a></li>
+ -->			</c:if>
+<!-- 			</security:authorize>
+ -->    </ul>
   </div>
 </nav>
   

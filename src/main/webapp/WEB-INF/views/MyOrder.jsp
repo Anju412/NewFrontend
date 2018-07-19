@@ -1,21 +1,21 @@
 <%@ page language="java" contentType="text/html" %>
 <%@include file="Header.jsp" %>
 
-<div class="container">
+<div class="container" style="border:5px solid black">
 <table class="table">
 <tr>
-<td colspan="6"><center><h3>Your Order</h3></center>
-<tr>
-<td> SL # </td>
-<td> Product Name</td>
-<td> Quantity</td>
-<td> Price</td>
-<td> Total Price</td>
+<td colspan="8"><center><h3><b><font color="brown">Your Order</h3></center>
+<tr >
+<td><b> SL # </td>
+<td><b> Product Name</td>
+<td><b> Quantity</td>
+<td><b> Price</td>
+<td><b> Total Price</td>
 
 </tr>
 
 <c:if test="${empty cartItems}" var="cartItem">
-<tr><td colspan="6"><center>!!! Your Cart is Empty !!!</center></td></tr>
+<tr><td colspan="8"><center>!!! Your Cart is Empty !!!</center></td></tr>
 </c:if>
 
 <c:if test="${not  empty cartItems}">
@@ -35,14 +35,14 @@
 </form>
 </c:forEach>
 </c:if>
-<tr bgcolor="orange">
-<td colspan="4">Total Purchase Amount </td>
-<td>${totalPurchaseAmount }</td>
+<tr bgcolor="indigo">
+<td colspan="6"><font color="white">Total Purchase Amount </td>
+<td><font color="white">${totalPurchaseAmount }/--</td>
 </tr>
 
-<tr bgcolor="lightBlue">
-<td colspan="3"><a href="<c:url value="/continueShopping"/>" class="btn btn-info">Continue Shopping</a></td>
-<td colspan="3"><a href="<c:url value="/payment"/>" class="btn btn-info">Payment</a></td>
+<tr bgcolor="midnightblue">
+<td colspan="6" ><a href="<c:url value="/continueShopping"/>" class="btn btn-info" style="background-color:black"><font color="white"><span class="glyphicon glyphicon-arrow-left"><b> Continue Shopping</a></td>
+<td colspan="6"><a href="<c:url value="/payment"/>" class="btn btn-info" style="background-color: black"><font color="white"><b>Payment <span class="glyphicon glyphicon-arrow-right"></a></td>
 </tr>
 
 </table>

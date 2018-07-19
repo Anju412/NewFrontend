@@ -1,41 +1,44 @@
 <%@ page language="java" contentType="text/html" %>
 <%@include file="Header.jsp" %>
 
-<div class="container">
+<div class="container" style="border:4px solid black">
 <table class="table">
+
+<tr><h3><center><b>Product Details<center></h3></tr>
+
 
 <tr>
 	<td rowspan="9">
-		<img src="<c:url value="/resources/images/${product.prodId}.jpg"/>" width="300" heigt="300">
+		<img src="<c:url value="/resources/images/${product.prodId}.jpg"/>" width="300" heigt="300" style="border:5px solid brown">
 		</td>
 		</tr>
 <tr>
-	<td>Product Id</td>
+	<td><b>Product Id</td>
 	<td>${product.prodId}</td>
 	</tr>
 		
 <tr>
-	<td>Product Name</td>
+	<td><b>Product Name</td>
 	<td>${product.prodName}</td>
 	</tr>
 	<tr>
 	<tr>
-	<td>Product Description</td>
+	<td><b>Product Description</td>
 	<td>${product.prodDesc}</td>
 	</tr>
-	<td>Price</td>
+	<td><b>Price</td>
 	<td>${product.price}</td>
 	</tr>
 		<tr>
-	<td>Supplier Id</td>
+	<td><b>Supplier Id</td>
 	<td>${product.suppId}</td>
 	</tr>
 	<tr>
-	<td>Category</td>
+	<td><b>Category</td>
 	<td>${categoryName}</td>
 	</tr>
 	<form action="<c:url value="/AddToCart/${product.prodId}"/>" method="get">	<tr>
-	<td>Quantity</td>
+	<td><b>Quantity</td>
 	<td>
 		<select name="quantity" class="form-control btn-block">
 		<option value="1">1</option>
@@ -45,8 +48,10 @@
 	</td>
 	</tr>
 	<tr>
-	<td colspan="2" >
-	<input type="submit" value="AddToCart" class="btn btn-info btn-block"/>
+	<td colspan="8" >
+	<center>
+	
+	<input type="submit"  style="background-color:#4dff4d" value="AddToCart" class="btn btn-info btn-block" /></center>
 	</td>
 	</tr>
 	</form>
