@@ -5,7 +5,7 @@
 <title>Register</title>
  <style>
  body {
-	background: url('resources/images/signin.jpg') fixed;
+	background: url('resources/images/i5.jpg') fixed;
 	background-size: cover;
 	padding: 0;
 	margin: 0;
@@ -186,54 +186,7 @@ width:100%;}
 		src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<!------ Include the above in your HEAD tag ---------->
-<%-- <form:form action="/frontend/Register" modelAttribute="userDetail" method="post">
 
-<table align="center" cellspacing="3" class="table">
-	<tr bgcolor="pink">
-		<td colspan="2"><center><b>Manage Products</b></center></td>
-	</tr>
-	
-	<tr>
-		<td>User Name</td>
-		<td><form:input   placeholder="Username" path="userName" /></td>
-	</tr>
-	
-	<tr>
-		<td>Email</td>
-		<td><form:input   placeholder="Email" path="email" /></td>
-	</tr>
-	
-	<tr>
-		<td>Customer name</td>
-		<td><form:input  placeholder="Enter Full Name" path="customerName" /></td>
-	</tr>	 
-	
-	<tr>
-		<td>Mobile</td>
-		<td><form:input   placeholder="Mobile number" path="mobile" /></td>
-	</tr>
-	
-	<tr>
-		<td>Address</td>
-			<td><form:input   placeholder="Address" path="address" /></td>
-
-	</tr>
-	
-	<tr>
-		<td>Password</td>
-		<form:input   placeholder="Password" path="password" /></td>
-	</tr>
-	
-	<tr>
-		<td>
-			<center><input type="submit" class="btn btn-primary" value="Register"/></center></td>
-		
-	</tr>
-
-</table>
-</form:form>
-
- --%>	
 	
 
 	
@@ -246,11 +199,7 @@ width:100%;}
 				<p class="form-title" ><center><b>Register Here</b></center>
 				<form:form action="/frontend/Register" modelAttribute="userDetail" method="post">
 				
-				<table align="center" cellspacing="3" class="table">
-				
-			
-				
-				
+				<table align="center" cellspacing="3" class="table">				
 			
 				<tr>
 				<td>	<label for="inputEmail4">Username</label> 
@@ -291,7 +240,8 @@ width:100%;}
 			
 </form:form>
 
-
+</div>
+</div>
 	</div>
  
 
@@ -309,4 +259,5 @@ width:100%;}
 
 	<%-- <%@include file="footer.jsp"%> --%>
 </body>
+
 </html>

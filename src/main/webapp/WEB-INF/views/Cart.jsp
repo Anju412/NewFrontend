@@ -44,7 +44,10 @@
 <tr bgcolor="mistyrose">
 <td colspan="3"><a href="<c:url value="/continueShopping"/>" class="btn btn-info" style="background-color:#000099"><span class="glyphicon glyphicon-arrow-left"><font color="white"> Continue Shopping</a></td>
 <td colspan="3"><a href="<c:url value="/checkout"/>" class="btn btn-info" style="background-color:#000099"><font color="white">Check Out <span class="glyphicon glyphicon-arrow-right"></a></td>
+<br><br>
 </tr>
-
 </table>
 </div>
+<br><br>
+<%@include file="footer.jsp" %>
+</html>

@@ -4,8 +4,13 @@
  <style>
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext,vietnamese');   
 
+body
+{
+background: url("resources/images/bag1.jpg")
+}
+
 .panel.panel--styled {
-    background: #F4F2F3;
+    background:url("resources/images/backg3.jpg") ;
 }
 .panelTop {
     padding: 30px;
@@ -76,7 +81,7 @@ span.glyphicon {
  <c:forEach items="${productList}" var="product">
  
  <div class="container"  >    
-		<div class="row">
+		<div class="row"><center>
 			<div class="col-md-12">				
 				<div class="panel panel-default  panel--styled">
 					<div class="panel-body">
@@ -85,7 +90,7 @@ span.glyphicon {
 								<img class="img-responsive" height="220px" width="180px" src="/frontend/resources/images/${product.prodId}.jpg">
 							</div>
 							<div class="col-md-8">	
-								<h2>${product.prodName}</h2>
+								<h1><font color="darkblue">${product.prodName}</h1>
 								<p>${product.prodDesc}</p>
 							</div>
 						</div>
@@ -226,4 +231,5 @@ $( document ).ready(function() {
 });</script> 
  </c:forEach>
 </body>
+<%@include file="footer.jsp" %>
 </html>

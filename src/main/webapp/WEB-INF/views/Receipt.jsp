@@ -34,7 +34,7 @@
     			<div class="col-xs-6">
     				<address>
     				<strong>Billed To:</strong><br>
-    					${orderDetail.username}<br>
+    					${userDetail.userName}<br>
     					${userDetail.address }<br>
     					${userDetail.mobile }<br>
     					${userDetail.email }
@@ -177,7 +177,14 @@
 <tr bgcolor="darkblue">
 	<td colspan="5"><center><font color="white"><h3>!!!!Thanks For Shopping!!!!</h4></center></td>
 </tr>
-</div>
 
 </table>
-
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<%@include file="footer.jsp" %>

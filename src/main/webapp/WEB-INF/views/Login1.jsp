@@ -12,7 +12,7 @@
 
 <style>body
 {
-    background: url('resources/images/signin.jpg') fixed;
+    background: url('resources/images/backg3.jpg') fixed;
     background-size: cover;
     padding: 0;
     margin: 0;
@@ -213,24 +213,25 @@ form.login a:hover
             --> </div>
             <div class="wrap">
                 <p class="form-title">
-                    Sign In</p>
+                 <font color="darkblue"> <h1> <center> Login In</h1></p>
                 <form id="LoginForm" action="processing" method="post" class="form-horizontal" role="form">
                 <input id="username" type="text" class="form-control" name="username" placeholder="Username" />
                 <input id="password" type="password" class="form-control" name="password" placeholder="Password" />
                 <input type="submit" value="Sign In" class="btn btn-success btn-sm" />
                 <div class="remember-forgot">
-                    <div class="row">
+                   <!--  <div class="row">
                         <div class="col-md-6">
+                         <a href="#"><img class="card-img-top" src="resources/images/carasol1.jpg" ></a>
                             <div class="checkbox">
-                                <label>
+                               <label>
                                     <input type="checkbox" />
                                     Remember Me
-                                </label>
-                            </div>
+                                </label> 
+                            </div> -->
                         </div>
-                        <div class="col-md-6 forgot-pass-content">
+                       <!--  <div class="col-md-6 forgot-pass-content">
                             <a href="javascription:void(0)" class="forgot-pass">Forgot Password</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 </form>

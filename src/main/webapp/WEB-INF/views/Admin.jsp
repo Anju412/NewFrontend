@@ -1,4 +1,5 @@
-
+<%@ page language="java" contentType="text/html" %>
+<%@include file="/WEB-INF/views/Header.jsp" %>
 
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <head>
@@ -80,14 +81,14 @@ h1.page-header {
                 </div>
             </div>
 		</div>
-		<footer class="pull-left footer">
-			<p class="col-md-12">
-				<hr class="divider">
-				Copyright &COPY; 2018<a href="<c:url value='/home'/>"> ShoppingWhopping.com</a>
-			</p>
-		</footer>
+		
 	</div>
 	
-	
 	<%@include file="footer.jsp" %>
+	<%-- <footer class="pull-left footer">
+			<p class="col-md-12">
+				<hr class="divider">
+				<center>Copyright &COPY; 2018<a href="<c:url value='/home'/>"> Fashworld.com</a>
+			</p>
+		</footer> --%>
 	</body>

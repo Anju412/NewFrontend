@@ -49,3 +49,7 @@
 </tr>
 </table>
 </div>
+<br>
+<br>
+<%@include file="footer.jsp" %>
+</table>
