@@ -12,9 +12,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.niit.dao.CartDAO;
+import com.niit.dao.CouponDAO;
 import com.niit.dao.OrderDetailDAO;
 import com.niit.dao.UserDetailDAO;
 import com.niit.model.CartItem;
+import com.niit.model.Coupon;
 import com.niit.model.OrderDetail;
 import com.niit.model.UserDetail;
 
@@ -27,6 +29,8 @@ public class OrderController {
 	OrderDetailDAO orderDetailDAO;
 	@Autowired
 	UserDetailDAO userDetailDAO;
+	/*@Autowired
+	CouponDAO couponDAO;*/
 	
 	@RequestMapping("/checkout")
 	public String checkOutProcess(Model m,HttpServletRequest request){
@@ -60,12 +64,13 @@ public class OrderController {
 		m.addAttribute("cartItems", cartItems);
 		int totalPurchaseAmount=this.calcTotalPurchaseAmount(cartItems);
 		m.addAttribute("totalPurchaseAmount", totalPurchaseAmount);
-		
+		//m.addAttribute("totalPurchasedAmount", totalPurchasedAmount);
 		OrderDetail orderDetail=new OrderDetail();
 		orderDetail.setPaymentMode(paymode);
 		System.out.println(orderDetail.getPaymentMode());
 		orderDetail.setUsername(username);
 		orderDetail.setTotalPurchaseAmount(totalPurchaseAmount);
+		//orderDetail.setTotalPurchaseAmount(totalPurchasedAmount);
 		orderDetail.setOrderDate(new java.util.Date());
 		
 		orderDetailDAO.insertOrderDetail(orderDetail);
@@ -76,6 +81,22 @@ public class OrderController {
 		return "Receipt";
 	}
 	
+	/*@RequestMapping(value="/applyoffer",method=RequestMethod.POST)
+	public String priceafteroffer(@RequestParam("totalamount")int totalamount,@RequestParam("couponName")String couponName,Model m){
+		Coupon coupon=couponDAO.getCoupon(couponName);
+		//System.out.println(coupon.getCouponValue());
+		//System.out.println(coupon.getCouponName());
+		int value=coupon.getCouponValue();
+		
+		if(value<=100) {
+			 totalamount=((100- value)*totalamount)/100;
+		}
+		else {
+			totalamount=totalamount-value;
+		}
+		m.addAttribute("totalPurchasedAmount",totalamount);
+		return "Payment";
+	}*/
 	
 	public int calcTotalPurchaseAmount(List<CartItem> cartItems) {
 		int totalPurchaseAmount=0;

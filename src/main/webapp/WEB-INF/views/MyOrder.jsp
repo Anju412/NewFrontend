@@ -35,14 +35,14 @@
 </form>
 </c:forEach>
 </c:if>
-<tr bgcolor="indigo">
-<td colspan="6"><font color="white">Total Purchase Amount </td>
-<td><font color="white">${totalPurchaseAmount }/--</td>
+<tr bgcolor="#ffffc2">
+<td colspan="6"><font color="darkblue"><h4><b>Total Purchase Amount </td>
+<td><font color="darkblue"><h4><b>${totalPurchaseAmount }/--</td>
 </tr>
 
-<tr bgcolor="midnightblue">
-<td colspan="6" ><a href="<c:url value="/continueShopping"/>" class="btn btn-info" style="background-color:black"><font color="white"><span class="glyphicon glyphicon-arrow-left"><b> Continue Shopping</a></td>
-<td colspan="6"><a href="<c:url value="/payment"/>" class="btn btn-info" style="background-color: black"><font color="white"><b>Payment <span class="glyphicon glyphicon-arrow-right"></a></td>
+<tr bgcolor="mistyrose">
+<td colspan="6" ><a href="<c:url value="/continueShopping"/>" class="btn btn-info" style="background-color: #000099"><font color="white"><span class="glyphicon glyphicon-arrow-left"><b> Continue Shopping</a></td>
+<td colspan="6"><a href="<c:url value="/payment"/>" class="btn btn-info" style="background-color:  #000099"><font color="white"><b>Payment <span class="glyphicon glyphicon-arrow-right"></a></td>
 </tr>
 </table>
 </div>

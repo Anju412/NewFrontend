@@ -189,14 +189,14 @@ width:100%;}
 
 	
 
-	
+	<div class="container">
 	
 	 <div class="form-row">
 
 			<div>
 				<div class="form-group col-md-8"></div>
 				<div class="form-group col-md-4">
-				<p class="form-title" ><center><b>Register Here</b></center>
+				<p class="form-title" ><h3><b>Register Here</b></h3>
 				<form:form action="/frontend/Register" modelAttribute="userDetail" method="post">
 				
 				<table align="center" cellspacing="3" class="table">				
@@ -243,7 +243,7 @@ width:100%;}
 </div>
 </div>
 	</div>
- 
+ </div>
 
 
 	<script> $(document).ready(function () {
@@ -255,9 +255,7 @@ width:100%;}
       $(".pr-wrap").removeClass("show-pass-reset");
     }); 
 });</script>
-
-
-	<%-- <%@include file="footer.jsp"%> --%>
 </body>
-
+<br><br>
+<%@include file="footer.jsp"%>
 </html>

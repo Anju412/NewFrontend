@@ -83,7 +83,7 @@ h1.page-header {
 		</div>
 		
 	</div>
-	
+	<br><br>
 	<%@include file="footer.jsp" %>
 	<%-- <footer class="pull-left footer">
 			<p class="col-md-12">

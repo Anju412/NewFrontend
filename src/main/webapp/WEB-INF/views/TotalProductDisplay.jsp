@@ -51,11 +51,12 @@
 	<td colspan="8" >
 	<center>
 	
-	<input type="submit"  style="background-color:#4dff4d" value="AddToCart" class="btn btn-info btn-block" /></center>
+	<input type="submit"  style="background-color:#ccff80" value="AddToCart" class="btn btn-info btn-block" /></center>
 	</td>
 	</tr>
 	</form>
 </table>
 </div>
+<br><br>
 <%@include file="footer.jsp" %>
 </html>

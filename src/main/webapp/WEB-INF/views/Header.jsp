@@ -30,7 +30,10 @@
  --%>            <li><a href="<c:url value='/contactus'/>">ContactUs</a></li>
             <li><a href="<c:url value='/aboutus'/>">AboutUs</a></li>
             <li><a href="<c:url value='/Admin'/>">Admin</a></li>
-            <!-- <security:authorize access="isAuthenticated()">
+                        <li><a href="<c:url value='/viewcart'/>">ViewCart</a></li>
+            
+<%--             <li><a href="<c:url value='/viewcart'/>"viewcart</a></li>
+ --%>            <!-- <security:authorize access="isAuthenticated()">
 			<li><a href="logout"><font size="2">LogOut</font></a></li>
 			</security:authorize> -->
     </ul>
@@ -49,6 +52,7 @@
             <c:if test="${pageContext.request.userPrincipal.name!=null }">
       	<li class="nav-item">
       	 <a class="nav-link" href="<c:url value='/logout'/>">Logout</a>
+      	<!--  <a href="/frontend/viewcart">viewcart</a> -->
 <!-- 			<li><a href="logout"><font size="2">LogOut</font></a></li>
  -->			</c:if>
 <!-- 			</security:authorize>

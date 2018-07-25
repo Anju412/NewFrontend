@@ -65,18 +65,11 @@ span.glyphicon {
 .glyphicon-star:hover { 
     transform: rotate(-15deg) scale(1.3); 
 }
-
-
-
-
-                                   </style> 
+</style> 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
  <br>
-   
-
-
 
  <c:forEach items="${productList}" var="product">
  

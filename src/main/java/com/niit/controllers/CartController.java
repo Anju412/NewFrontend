@@ -80,6 +80,15 @@ public class CartController {
 	return "Cart";
 	}
 	
+	@RequestMapping(value="/viewcart")
+	public String showCartPage(HttpServletRequest request,Model m){
+		String username=(String)request.getUserPrincipal().getName();
+		List<CartItem> cartItems=cartDAO.showCartItems(username);
+		m.addAttribute("cartItems",cartItems);
+		m.addAttribute("totalPurchaseAmount",this.calcTotalPurchaseAmount(cartItems));
+		return "Cart";
+	}
+	
 	@RequestMapping(value="/deleteCartItem/{cartItemId}")
 	public String deleteCartItem(@PathVariable("cartItemId") int cartItemId,HttpSession session,Model m,HttpServletRequest request)
 	{

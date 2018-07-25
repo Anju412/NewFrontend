@@ -20,7 +20,11 @@
 }
 </style>
 </head>
-
+<div class="col-md-2" align="left" >
+<form>
+<input type="button" value="Printitnow" onclick="window.print()">
+</form>
+</div>
 <div class="container" style="border:5px solid black">
 
 <div class="row">
@@ -173,6 +177,16 @@
 	<td colspan="3"><font color="black">total Purchased Amount</td>
 	<td colspan="2"><font color="black">&#8377;${totalPurchaseAmount}</td>
 </tr>
+
+<%-- <tr bgcolor="orange">
+	<td colspan="3">Offers Applied</td>
+	<td colspan="2">&#8377;${totalPurchaseAmount-totalPurchasedAmount}</td>
+</tr>
+<tr bgcolor="orange">
+	<td colspan="3">Final Price</td>
+	<td colspan="2">&#8377;${totalPurchasedAmount}</td>
+</tr> --%>
+
 
 <tr bgcolor="darkblue">
 	<td colspan="5"><center><font color="white"><h3>!!!!Thanks For Shopping!!!!</h4></center></td>

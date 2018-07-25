@@ -3,6 +3,14 @@
 
 
 <div class="container" style="border:5px solid black">
+<%-- <form action="/frontend/applyoffer" method="post">
+			<input name="couponcode" type="text">
+			<input type="text" name="totalamount" value="${totalPurchasedAmount}" hidden>
+			<input type="submit" value="Apply Offer"/>
+			</form> --%>
+
+
+
 <form action="<c:url value="/paymentProcess"/>" method ="post">
 
 <table class="table">
@@ -16,6 +24,7 @@
 
 <div class="container">
 <table class="table" align="center" width="50%">
+
 
 <tr>
 <td colspan="2"><b><h3><font color="indigo">Payment Option</font></h3></td>

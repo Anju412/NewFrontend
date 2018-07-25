@@ -156,7 +156,7 @@ background: url("resources/images/bag1.jpg")
             <i class="fa fa-th fa-3x text-colored"></i>
             <h4>Get In Touch</h4>
             <abbr title="Phone">P:</abbr> (123) 456-7890<br>
-            E: <a href="mailto:email@email.com" class="text-muted">email@email.com</a>
+            E: <a href="mailto:email@email.com" class="text-muted">fashworld@gmail.com</a>
           </div>
         </div><!-- end col -->
 
@@ -232,7 +232,7 @@ background: url("resources/images/bag1.jpg")
       </div> <!-- end row -->
           
     </div>
-
+<br><br>
 <%@include file="footer.jsp" %>
 </body>
 </html> --%>
